@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="text-center">
+        Registration
+    </h1>
+        <div class="mx-auto">
+            <div class="col-md-6 mx-auto">
+                <label for="validationCustom01" class="form-label">First name</label>
+                <input type="text" class="form-control" #name required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mx-auto">
+                <label for="validationCustomUsername" class="form-label">Email</label>
+                <div class="input-group has-validation">
+                  <input type="email" class="form-control" #email aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mx-auto">
+                  <label for="validationCustom03" class="form-label">Password</label>
+                  <input type="password" class="form-control" #pass required>
+                </div>
+              <div class="col-2 my-3 mx-auto">
+                <button class="btn btn-primary" (click)='abc("abc")' type="submit">Submit form</button>
+              </div>
+        </div>
+</div>
