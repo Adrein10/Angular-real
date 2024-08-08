@@ -5,7 +5,7 @@
         <div class="mx-auto">
             <div class="col-md-6 mx-auto">
                 <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control" #name required>
+                <input type="text" class="form-control" #username required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
@@ -21,10 +21,10 @@
               </div>
               <div class="col-md-6 mx-auto">
                   <label for="validationCustom03" class="form-label">Password</label>
-                  <input type="password" class="form-control" #pass required>
+                  <input type="password" class="form-control" #password required>
                 </div>
               <div class="col-2 my-3 mx-auto">
-                <button class="btn btn-primary" (click)='abc("abc")' type="submit">Submit form</button>
+                <button class="btn btn-primary" (click)="abc(username.value,email.value,password.value)" type="button">Registration</button>
               </div>
         </div>
 </div>

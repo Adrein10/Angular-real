@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class RegistrationComponent {
 abc(name:any,email:any,pass:any){
-  localStorage.setItem(name,name)
+  localStorage.setItem("name", name),
+  localStorage.setItem("email", email),
+  localStorage.setItem("pass", pass)
 }
 }
